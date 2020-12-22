@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2mg 계산기</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="title">
+    <h1 id="korTitle"><a href="index.html">수학 계산기</a></h1>
+    <h5 id="engTitle"><a href="index.html">Calculator.2mg</a></h5>
+    </div>
+    <div id="grid">
+      <ul>
+        <li><a href="arithmetic.html">산술(사칙연산)</a></li>
+        <li><a href="2.html">링크2</a></li>
+        <li><a href="3.html">링크3</a></li>
+      </ul>
+      <div id="content">
+        <h2>산술(사칙연산)</h2>
+        <p>
+          <form oninput="result1.value=Math.round((parseFloat(input1.value)+parseFloat(input2.value))*1e12)/1e12;
+            result2.value=Math.round((parseFloat(input1.value)-parseFloat(input2.value))*1e12)/1e12;
+            result3.value=Math.round((parseFloat(input1.value)*parseFloat(input2.value))*1e12)/1e12;
+            result4.value=Math.round((parseFloat(input1.value)/parseFloat(input2.value))*1e12)/1e12;">
+            수1 <input type="text" id="input1" name="input1"/><br>
+            수2 <input type="text" id="input2" name="input2"/><br>
+            ADD <output name="result1" for="input1 input2"></output><br>
+            SUB <output name="result2" for="input1 input2"></output><br>
+            MUL <output name="result3" for="input1 input2"></output><br>
+            DIV <output name="result4" for="input1 input2"></output>
+          </form>
+        </p>
+        <p id="keyword">
+          유입 검색어 부분
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
